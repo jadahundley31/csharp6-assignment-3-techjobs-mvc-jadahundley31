@@ -23,7 +23,7 @@ public class SearchController : Controller
     {
         List<Job> jobs = new List<Job>();
 
-        if (searchType.Equals("all") || searchType.Equals(""))
+        if (searchTerm.Equals("all") || searchTerm.Equals(""))
         {
             ViewBag.jobs = JobData.FindAll();
         }
